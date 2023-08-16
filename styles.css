@@ -235,6 +235,7 @@ button {
     justify-content: space-between;
     position: relative;
     z-index: 9999;
+    padding: 3rem 10rem;
     top: 0;
 }
 
@@ -333,10 +334,20 @@ button {
 }
 
 /* ==== Media Query ==== */
+@media (max-width: 1450px) {
+    /* ==== Navbar ==== */
+    .navbar {
+        padding-inline: 2rem;
+    }
+}
 
 /* Tablet - Laptop */
 @media (max-width: 1199px) {
     /* ==== Navbar ==== */
+    .navbar {
+        padding-block: 2rem;
+    }
+
     .navbar__list {
         display: none;
         position: absolute;
