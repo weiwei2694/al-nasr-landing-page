@@ -17,11 +17,56 @@
 </head>
 
 <body>
-    <heading style="height: 100vh; background-color: var(--gradient-header); gap: 3rem;"
-        class="flex-center section__padding">
-        <h1 class="heading1-bold">Al Nassr Page</h1>
-        <button class="button-outline">Contact Us</button>
-    </heading>
+    <!-- Header -->
+    <header class="header">
+        <!-- Navbar -->
+        <nav class="navbar section__padding">
+            <!-- Logo -->
+            <img src="/assets/logo.svg" alt="Logo" class="navbar__logo">
+
+            <!-- List -->
+            <ul class="navbar__list">
+                <li class="sub2-medium" style="color: var(--oranye-1);">Home</li>
+                <li class="sub2-medium">About Us</li>
+                <li class="sub2-medium">Package</li>
+                <li class="sub2-medium">Facilities</li>
+                <li class="sub2-medium">Gallery</li>
+            </ul>
+
+            <!-- Button ( Contact Us ) & Menu ( Hamburger ) -->
+            <div class="navbar__button">
+                <!-- Hamburger Menu -->
+                <div class="navbar__button-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- Contact Us -->
+                <button type="button" class="button-filled">Contact Us</button>
+            </div>
+        </nav>
+        <!-- End Of Navbar -->
+
+        <!-- Section ( Header ) -->
+        <section class="section__padding section__header">
+            <!-- Heading -->
+            <div class="section__header-heading flex-center">
+                <h5 class="heading5-bold">No. 1 in Indonesia</h5>
+                <h1 class="heading1-bold">Make it easy for your Umrah worship with Al Nasr Travel</h1>
+                <p class="sub1-semibold">Facilitate your Umrah pilgrimage with us, we already have hundreds of thousands
+                    of customers, you can go for Umrah to Mecca and Medina</p>
+                <button class="button-filled">Contact Us</button>
+            </div>
+
+            <!-- Image Cover -->
+            <div class="section__header-image flex-center">
+                <img src="/assets/hero.svg" alt="Hero">
+            </div>
+        </section>
+        <!-- End Of Section ( Header ) -->
+    </header>
+    <!-- End Of Header -->
 
     <!-- Script -->
     <script src="script.js" type="text/javascript"></script>

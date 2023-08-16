@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 /* ==== Variables ==== */
@@ -117,17 +118,29 @@ button {
 
 /* ==== Section Padding, Or Margin ==== */
 .section__padding {
-    padding: 2rem 4rem;
+    padding: 2rem 10rem;
 }
 
 .section__margin {
-    margin: 2rem 4rem;
+    margin: 2rem 10rem;
 }
 
 /* ==== Media Query ==== */
 
+/* Laptop - Dekstop */
+@media (max-width: 1450px) {
+    /* ==== Section Padding, Or Margin ==== */
+    .section__padding {
+        padding: 2rem;
+    }
+
+    .section__margin {
+        margin: 2rem;
+    }
+}
+
 /* Tablet - Laptop */
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
     /* ==== Heading ==== */
     .heading1-bold {
         font-size: 48px;
@@ -154,7 +167,7 @@ button {
     .button-filled,
     .button-outline {
         font-size: 18px;
-        padding: 1.5rem 3rem;
+        padding: 1rem 3rem;
     }
 }
 
@@ -169,10 +182,6 @@ button {
         font-size: 22px;
     }
 
-    .heading5-bold {
-        font-size: 10px;
-    }
-
     /* ==== Sub Heading ==== */
     .sub1-semibold {
         font-size: 18px;
@@ -180,15 +189,6 @@ button {
 
     .sub2-medium {
         font-size: 16px;
-    }
-
-    /* ==== Section Padding, Or Margin ==== */
-    .section__padding {
-        padding: 2rem;
-    }
-
-    .section__margin {
-        margin: 2rem;
     }
 }
 
@@ -215,5 +215,161 @@ button {
 
     .section__margin {
         margin: 2rem 1rem;
+    }
+}
+
+/* ==== Manual Styling ==== */
+
+/* ==== Header ==== */
+.header {
+    background-color: var(--gradient-header);
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* ==== Navbar ==== */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9999;
+    top: 0;
+}
+
+.navbar__list {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.navbar__list .sub2-medium {
+    cursor: pointer;
+}
+
+.navbar__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar__button-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.navbar__button .button-filled {
+    padding: 1rem 3rem;
+}
+
+.navbar__button-menu > span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--dark-1);
+}
+
+/* ==== Section ( Header ) ==== */
+.section__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.section__header-heading {
+    flex: 1;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.section__header-heading h5 {
+    padding: 0.5rem 2rem;
+    background-color: var(--cyan-2);
+    color: var(--teal-1);
+    border-radius: 50px;
+}
+
+.section__header-image {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+/* ==== Media Query ==== */
+
+/* Tablet - Laptop */
+@media (max-width: 1199px) {
+    /* ==== Navbar ==== */
+    .navbar__list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        flex-direction: column;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0px 19px 14px 1px rgba(0, 0, 0, 0.1);
+        margin-inline: 2rem;
+        gap: 0;
+        animation: showMenu 0.5s ease-in-out forwards;
+    }
+
+    .navbar__list .sub2-medium {
+        padding: 1rem 2rem;
+        border-radius: 10px;
+    }
+
+    .navbar__list .sub2-medium:first-child {
+        background-color: var(--cyan-2);
+        color: var(--teal-1) !important;
+    }
+
+    .navbar__list.active {
+        display: flex;
+    }
+
+    .navbar__button-menu {
+        display: flex;
+    }
+
+    /* ==== Section ( Header ) ==== */
+    .section__header {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .section__header-heading {
+        gap: 1rem;
+    }
+
+    .section__header-image img {
+        width: 100%;
+    }
+}
+
+/* Smartphone ( Potrait ) */
+@media (max-width: 768px) {
+    /* ==== Navbar ==== */
+    .navbar__button .button-filled {
+        display: none;
+    }
+
+    .navbar__list {
+        margin-inline: 2rem;
+    }
+}
+
+/* ==== Key Frames ==== */
+@keyframes showMenu {
+    0% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
