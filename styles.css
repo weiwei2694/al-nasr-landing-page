@@ -150,10 +150,6 @@ button {
         font-size: 26px;
     }
 
-    .heading5-bold {
-        font-size: 14px;
-    }
-
     /* ==== Sub Heading ==== */
     .sub1-semibold {
         font-size: 18px;
@@ -333,6 +329,116 @@ button {
     gap: 3rem;
 }
 
+/* ==== Section ( Package ) ==== */
+.package {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.package__heading {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+}
+
+.package__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+.package__card-program,
+.package__card-program__soon {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 0px rgba(29, 165, 153, 0.15);
+    width: 380px;
+}
+
+.package__card-program__soon {
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.package__card-program__soon h5 {
+    color: var(--teal-1) !important;
+}
+
+.package__card-program__image {
+    padding: 1rem;
+}
+
+.package__card-program__image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.package__card-program__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    padding: 0 1rem 1rem;
+}
+
+.package__card-program__heading-status {
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.package__card-program__heading-status h5:last-child {
+    position: absolute;
+    right: 0;
+    padding: 0.5rem 2rem;
+    border-radius: 50px 0 0 50px;
+    background-color: var(--cyan-2);
+    color: var(--teal-1) !important;
+}
+
+.package__card-program__heading h4 {
+    font-family: var(--font-nunito);
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--dark-gray-2);
+    line-height: 140%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.package__card-program__heading h4 span {
+    color: var(--teal-1);
+}
+
+.package__card-program__heading-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.package__card-program__heading-buttons button {
+    padding: 0.5rem 2rem;
+    color: var(--oranye-1);
+    border: 1px solid var(--oranye-1);
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 12px;
+    font-family: var(--font-nunito);
+    font-weight: 600;
+}
+
 /* ==== Media Query ==== */
 @media (max-width: 1450px) {
     /* ==== Navbar ==== */
@@ -385,6 +491,7 @@ button {
 
     /* ==== Section ( Header ) ==== */
     /* ==== Section ( About Us ) ==== */
+    /* ==== Section ( Package ) ==== */
     .section__header,
     .aboutus {
         flex-direction: column;
@@ -416,6 +523,18 @@ button {
 
     .navbar__list {
         margin-inline: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* ==== Section ( Package ) ==== */
+    .package__card {
+        gap: 1rem;
+    }
+
+    .package__card-program,
+    .package__card-program__soon {
+        width: 100%;
     }
 }
 
