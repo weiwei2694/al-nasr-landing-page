@@ -1,0 +1,219 @@
+/* ==== Global Styling ==== */
+
+/* ==== Import Fonts ==== */
+@import url("https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+/* ==== Reset ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* ==== Variables ==== */
+:root {
+    /* Fonts */
+    --font-kufam: "Kufam", sans-serif;
+    --font-nunito: "Nunito", sans-serif;
+
+    /* Colors */
+    --cyan-1: #f3fffe;
+    --cyan-2: #c1fffa;
+    --teal-1: #1da599;
+    --oranye-1: #ffc265;
+    --dark-gray-1: #525252;
+    --dark-gray-2: #4a4a4a;
+    --light-1: #fff;
+    --dark-1: #000;
+
+    /* Gradient */
+    --gradient-header: linear-gradient(
+        to top bottom,
+        rgba(255 206, 131, 0),
+        rgba(255, 194, 101, 5%)
+    );
+}
+
+/* ==== Heading ==== */
+.heading1-bold,
+.heading3-bold,
+.heading5-bold {
+    line-height: 140%;
+}
+
+.heading1-bold {
+    font-size: 54px;
+    font-weight: bold;
+    font-family: var(--font-kufam);
+    color: var(--dark-gray-2);
+}
+
+.heading3-bold {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--dark-gray-2);
+    font-family: var(--font-kufam);
+}
+
+.heading5-bold {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--dark-gray-2);
+    font-family: var(--font-nunito);
+}
+
+/* ==== Sub Heading ==== */
+.sub1-semibold,
+.sub2-medium {
+    font-family: var(--font-nunito);
+    color: var(--dark-gray-2);
+    line-height: 150%;
+}
+
+.sub1-semibold {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sub2-medium {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+/* ==== Button ==== */
+button {
+    cursor: pointer;
+}
+
+.button-filled,
+.button-outline {
+    outline: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 150%;
+    color: var(--dark-gray-1);
+    font-family: var(--font-nunito);
+    border-radius: 10px;
+    padding: 1.5rem 5rem;
+}
+
+.button-filled {
+    border: none;
+    background-color: var(--oranye-1);
+}
+
+.button-outline {
+    border: 3px solid var(--oranye-1);
+    background-color: transparent;
+}
+
+/* ==== Flex ==== */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==== Section Padding, Or Margin ==== */
+.section__padding {
+    padding: 2rem 4rem;
+}
+
+.section__margin {
+    margin: 2rem 4rem;
+}
+
+/* ==== Media Query ==== */
+
+/* Tablet - Laptop */
+@media (max-width: 992px) {
+    /* ==== Heading ==== */
+    .heading1-bold {
+        font-size: 48px;
+    }
+
+    .heading3-bold {
+        font-size: 26px;
+    }
+
+    .heading5-bold {
+        font-size: 14px;
+    }
+
+    /* ==== Sub Heading ==== */
+    .sub1-semibold {
+        font-size: 18px;
+    }
+
+    .sub2-medium {
+        font-size: 16px;
+    }
+
+    /* ==== Button ==== */
+    .button-filled,
+    .button-outline {
+        font-size: 18px;
+        padding: 1.5rem 3rem;
+    }
+}
+
+/* Smartphone ( Potrait ) */
+@media (max-width: 768px) {
+    /* ==== Heading ==== */
+    .heading1-bold {
+        font-size: 44px;
+    }
+
+    .heading3-bold {
+        font-size: 22px;
+    }
+
+    .heading5-bold {
+        font-size: 10px;
+    }
+
+    /* ==== Sub Heading ==== */
+    .sub1-semibold {
+        font-size: 18px;
+    }
+
+    .sub2-medium {
+        font-size: 16px;
+    }
+
+    /* ==== Section Padding, Or Margin ==== */
+    .section__padding {
+        padding: 2rem;
+    }
+
+    .section__margin {
+        margin: 2rem;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 480px) {
+    /* ==== Heading ==== */
+    .heading1-bold {
+        font-size: 40px;
+    }
+
+    /* ==== Sub Heading ==== */
+    .sub1-semibold {
+        font-size: 18px;
+    }
+
+    .sub2-medium {
+        font-size: 16px;
+    }
+
+    /* ==== Section Padding, Or Margin ==== */
+    .section__padding {
+        padding: 2rem 1rem;
+    }
+
+    .section__margin {
+        margin: 2rem 1rem;
+    }
+}
