@@ -534,7 +534,7 @@ button {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
 .facilities__cards-card__heading p {
@@ -611,8 +611,8 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: .5rem;
-    padding: .2rem 1rem;
+    gap: 0.5rem;
+    padding: 0.2rem 1rem;
     border-radius: 50px;
     background-color: var(--cyan-2);
     color: var(--teal-1);
@@ -639,11 +639,11 @@ button {
     font-weight: 600;
     font-size: 14px;
     border-radius: 50px;
-    padding: .3rem 1.5rem;
+    padding: 0.3rem 1.5rem;
     text-align: center;
     width: fit-content;
     letter-spacing: 140%;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .testimonial__cards-card__heading-name {
@@ -665,6 +665,55 @@ button {
 .testimonial__button {
     display: flex;
     justify-content: flex-end;
+}
+
+/* ==== Section ( Gallery ) ==== */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cyan-1);
+    gap: 3rem;
+}
+
+.gallery__heading {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.gallery__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.gallery__gallery img {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery__gallery-large img {
+    height: auto;
+    max-width: 100%;
+}
+
+.gallery__gallery-small {
+    display: grid;
+    grid-template-columns: repeat(
+        2,
+        1fr
+    );
+    gap: 1rem;
+}
+
+.gallery__gallery-small > img {
+    width: 100%;
+    height: auto;
 }
 
 /* ==== Media Query ==== */
@@ -739,7 +788,6 @@ button {
         gap: 1rem;
     }
 
-
     /* ==== Section ( Airplane ) ==== */
     .airplane {
         flex-direction: column;
@@ -771,7 +819,7 @@ button {
     .testimonial__heading-heading {
         max-width: 100%;
     }
-    
+
     .testimonial__cards .splide__track {
         padding-block: 1rem;
     }
@@ -791,6 +839,19 @@ button {
     .navbar__list {
         margin-inline: 2rem;
     }
+
+    /* ==== Section ( Gallery ) ==== */
+    .gallery__gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery__gallery-large {
+        order: 2;
+    }
+
+    .gallery__gallery-small {
+        order: 1;
+    }
 }
 
 @media (max-width: 480px) {
@@ -809,6 +870,11 @@ button {
     /* ==== Section ( Testimonial ) ==== */
     .testimonial__cards-card {
         width: 400px !important;
+    }
+
+    /* ==== Section ( Gallery ) ==== */
+    .gallery__gallery-small {
+        grid-template-columns: 1fr;
     }
 }
 
