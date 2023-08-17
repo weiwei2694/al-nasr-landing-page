@@ -487,6 +487,64 @@ button {
     width: 100%;
 }
 
+/* ==== Section ( Facilities ) ==== */
+.facilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    background-color: var(--cyan-1);
+}
+
+.facilities__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    max-width: 800px;
+}
+
+.facilities__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+.facilities__cards-card {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    width: 350px;
+    background-color: var(--light-1);
+}
+
+.facilities__cards-card__image {
+    width: fit-content;
+}
+
+.facilities__cards-card__image img {
+    width: 36px;
+}
+
+.facilities__cards-card__heading {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.facilities__cards-card__heading p {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font-nunito);
+    color: var(--dark-gray-2);
+    line-height: 140%;
+}
+
 /* ==== Media Query ==== */
 @media (max-width: 1450px) {
     /* ==== Navbar ==== */
@@ -592,13 +650,15 @@ button {
 }
 
 @media (max-width: 480px) {
-    /* ==== Section ( Package ) ==== */
-    .package__card {
+    /* ==== Section ( Package, Facilities ) ==== */
+    .package__card,
+    .facilities__cards {
         gap: 1rem;
     }
 
     .package__card-program,
-    .package__card-program__soon {
+    .package__card-program__soon,
+    .facilities__cards-card {
         width: 100%;
     }
 }
