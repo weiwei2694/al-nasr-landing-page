@@ -12,8 +12,13 @@
     <!-- Icon -->
     <link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Styles ( CSS ) -->
+    <!-- Splide Js ( CDN ) -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <!-- styles.css -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -68,6 +73,7 @@
     </header>
     <!-- End Of Header -->
 
+
     <!-- Section ( About Us ) -->
     <section class="aboutus section__padding">
         <!-- Image -->
@@ -109,6 +115,7 @@
         </div>
     </section>
     <!-- End Of Section ( About Us ) -->
+
 
     <!-- Section ( Package ) -->
     <section class="package section__padding">
@@ -302,6 +309,7 @@
     </section>
     <!-- End Of Section  ( Package ) -->
 
+
     <!-- Section ( Airplane ) -->
     <section class="airplane section__padding">
         <!-- Heading -->
@@ -324,6 +332,7 @@
         </div>
     </section>
     <!-- End Of Section ( Airplane ) -->
+
 
     <!-- Section ( Facilities ) -->
     <section class="facilities section__padding">
@@ -452,8 +461,209 @@
     <!-- End Of Section ( Facilities ) -->
 
 
+    <!-- Section ( Testimonial ) -->
+    <section class="testimonial section__padding">
+        <!-- Heading & Button Prev ( Group 1 ) -->
+        <div class="testimonial__heading">
+            <!-- Button Prev ( Group 1 ) -->
+            <div class="testimonial__heading-button">
+                <button class="button-filled" id="group1-prevbtn">Previous</button>
+            </div>
+
+            <!-- Heading Container -->
+            <div class="testimonial__heading-heading">
+                <h1 class="heading1-bold">Testimonials from our customers</h1>
+                <p class="sub1-semibold">We have 100.000+ customers, here are our customer testimonials</p>
+            </div>
+        </div>
+
+        <!-- Card ( Testimonial ) -->
+        <div class="testimonial__cards">
+            <!-- Group 1 -->
+            <div class="splide" id="testimonial__cards-group1">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="testimonial__cards-card splide__slide">
+                            <!-- Image, And Ratings -->
+                            <div class="testimonial__cards-card__image">
+                                <img src="/assets/abd.svg" alt="Abd Al Jami'ah">
+                                <p>
+                                    <img src="/assets/star.svg" alt="star">
+                                    4.9
+                                </p>
+                            </div>
+
+                            <!-- Heading -->
+                            <div class="testimonial__cards-card__heading">
+                                <!-- Package -->
+                                <h5 class="testimonial__cards-card__heading-package">Al Nasr Umrah</h5>
+
+                                <!-- Name -->
+                                <h4 class="testimonial__cards-card__heading-name">Abd Al Jami'ah</h4>
+
+                                <!-- Description -->
+                                <p class="testimonial__cards-card__heading-description">
+                                    I am very satisfied with Al Nasr Travel's service, starting from when we arrived in
+                                    Saudi until we returned to Indonesia. We provide very good service.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__cards-card splide__slide">
+                            <!-- Image, And Ratings -->
+                            <div class="testimonial__cards-card__image">
+                                <img src="/assets/humaira.svg" alt="Humaira Khaira">
+                                <p>
+                                    <img src="/assets/star.svg" alt="star">
+                                    4.9
+                                </p>
+                            </div>
+
+                            <!-- Heading -->
+                            <div class="testimonial__cards-card__heading">
+                                <!-- Package -->
+                                <h5 class="testimonial__cards-card__heading-package">Al Nasr Umrah</h5>
+
+                                <!-- Name -->
+                                <h4 class="testimonial__cards-card__heading-name">Humaira Khaira</h4>
+
+                                <!-- Description -->
+                                <p class="testimonial__cards-card__heading-description">
+                                    I am very satisfied with Al Nasr Travel's service, starting from when we arrived in
+                                    Saudi until we returned to Indonesia. We provide very good service.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__cards-card splide__slide">
+                            <!-- Image, And Ratings -->
+                            <div class="testimonial__cards-card__image">
+                                <img src="/assets/hubi.svg" alt="Hubi Khairuddin">
+                                <p>
+                                    <img src="/assets/star.svg" alt="star">
+                                    4.9
+                                </p>
+                            </div>
+
+                            <!-- Heading -->
+                            <div class="testimonial__cards-card__heading">
+                                <!-- Package -->
+                                <h5 class="testimonial__cards-card__heading-package">Al Nasr Umrah</h5>
+
+                                <!-- Name -->
+                                <h4 class="testimonial__cards-card__heading-name">Hubi Khairuddin</h4>
+
+                                <!-- Description -->
+                                <p class="testimonial__cards-card__heading-description">
+                                    I am very satisfied with Al Nasr Travel's service, starting from when we arrived in
+                                    Saudi until we returned to Indonesia. We provide very good service.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 2 -->
+            <div class="splide" id="testimonial__cards-group2">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="testimonial__cards-card splide__slide">
+                            <!-- Image, And Ratings -->
+                            <div class="testimonial__cards-card__image">
+                                <img src="/assets/indra.svg" alt="Indra Pratama">
+                                <p>
+                                    <img src="/assets/star.svg" alt="star">
+                                    4.9
+                                </p>
+                            </div>
+
+                            <!-- Heading -->
+                            <div class="testimonial__cards-card__heading">
+                                <!-- Package -->
+                                <h5 class="testimonial__cards-card__heading-package">Al Nasr Haji</h5>
+
+                                <!-- Name -->
+                                <h4 class="testimonial__cards-card__heading-name">Indra Pratama</h4>
+
+                                <!-- Description -->
+                                <p class="testimonial__cards-card__heading-description">
+                                    I am very satisfied with Al Nasr Travel's service, starting from when we arrived in
+                                    Saudi until we returned to Indonesia. We provide very good service.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__cards-card splide__slide">
+                            <!-- Image, And Ratings -->
+                            <div class="testimonial__cards-card__image">
+                                <img src="/assets/ray.svg" alt="Ray Gunawan">
+                                <p>
+                                    <img src="/assets/star.svg" alt="star">
+                                    4.9
+                                </p>
+                            </div>
+
+                            <!-- Heading -->
+                            <div class="testimonial__cards-card__heading">
+                                <!-- Package -->
+                                <h5 class="testimonial__cards-card__heading-package">Al Nasr Haji Platinum</h5>
+
+                                <!-- Name -->
+                                <h4 class="testimonial__cards-card__heading-name">Ray Gunawan</h4>
+
+                                <!-- Description -->
+                                <p class="testimonial__cards-card__heading-description">
+                                    I am very satisfied with Al Nasr Travel's service, starting from when we arrived in
+                                    Saudi until we returned to Indonesia. We provide very good service.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__cards-card splide__slide">
+                            <!-- Image, And Ratings -->
+                            <div class="testimonial__cards-card__image">
+                                <img src="/assets/abd.svg" alt="Abd Al Jami'ah">
+                                <p>
+                                    <img src="/assets/star.svg" alt="star">
+                                    4.9
+                                </p>
+                            </div>
+
+                            <!-- Heading -->
+                            <div class="testimonial__cards-card__heading">
+                                <!-- Package -->
+                                <h5 class="testimonial__cards-card__heading-package">Al Nasr Umrah</h5>
+
+                                <!-- Name -->
+                                <h4 class="testimonial__cards-card__heading-name">Abd Al Jami'ah</h4>
+
+                                <!-- Description -->
+                                <p class="testimonial__cards-card__heading-description">
+                                    I am very satisfied with Al Nasr Travel's service, starting from when we arrived in
+                                    Saudi until we returned to Indonesia. We provide very good service.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button Next ( Group 2) -->
+        <div class="testimonial__button">
+            <button id="group2-nextbtn" class="button-filled">Next</button>
+        </div>
+    </section>
+    <!-- End Of Section ( Testimonial ) -->
+
+
     <!-- Script -->
-    <script src="script.js" type="text/javascript"></script>
+    <!-- Splide Js ( CDN ) -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <!-- Script.js -->
+    <script src="script.js" text="text/javascript"></script>
 </body>
 
 </html>
