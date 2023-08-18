@@ -232,7 +232,7 @@ button {
 .header {
     background-color: var(--gradient-header);
     width: 100%;
-    min-height: 100vh;
+    height: fit-content;
 }
 
 /* ==== Navbar ==== */
@@ -914,6 +914,16 @@ button {
 
     .navbar__list {
         margin-inline: 2rem;
+    }
+
+    /* ==== Section ( Header, Aboutus ) ==== */
+    .section__header-headinge {
+        justify-content: flex-start;
+    }
+
+    .section__header-image,
+    .aboutus__image {
+        display: none;
     }
 
     /* ==== Section ( Gallery ) ==== */
